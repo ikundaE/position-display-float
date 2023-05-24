@@ -2,7 +2,7 @@
     background-color: beige;
     border: 2px solid black;
     width: 75vw;
-    height: 175vh; /*changed this value from 75vh to prove the difference between static absolute and sticky when scrolling*/
+    height: 75vh; /*changed this value from 75vh to prove the difference between static absolute and sticky when scrolling*/
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -65,3 +65,55 @@
     /* Stays fixed once scroll occurs */
     /* it's relative by default (doesn't move out of normal flow) */
 }
+
+/* 
+? Display property
+
+* Treat an element as block or inline
+* Block are created top-to-bottom
+* Inline are positioned side-by-side
+ */
+
+ .display-container {
+    margin-top:  2me;
+ }
+
+ .block-container {
+    border:  2px solid black;
+    margin-top: 2px;
+ }
+
+ .inline-element {
+    margin: 5px;
+    display: block;
+    /* Turns Bottons into blocks and aligns in a column */
+ }
+
+ .inline-block {
+    border: 2px solid black;
+    margin-top: 2px;
+    /* Initially a block */
+    /* Display: inline */
+    /* Acts like a n inline element */
+    display: inline-block;
+    width: 125px;
+    /* Allows us to set the width and height of an inline element */
+ }
+
+ .float-container {
+    margin-top: 2em;
+    border: 2px solid blue;
+    height: 20vh;
+    width: 50vw;
+ }
+
+ .float-box {
+    margin: 5px;
+    border: 2px solid orange;
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+
+    float: right;
+    /* Shifts element from left to right */
+ }
